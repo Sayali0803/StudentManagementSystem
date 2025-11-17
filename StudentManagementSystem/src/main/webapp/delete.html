@@ -1,0 +1,82 @@
+<!-- <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Delete Student</title>
+</head>
+<body>
+<h2>Delete Student</h2>
+<form action="DeleteStudentServlet" method="post"> 
+   ID:<input type="text" name="id"><br><br>
+   <input type="submit" value="Delete Student">
+</form>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Delete Student</title>
+	<style>
+		body {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			background-color: #ffe5b4;
+			/* peach light */
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			width: 400px;
+			margin: 100px auto;
+			background-color: #fff;
+			padding: 30px 40px;
+			border-radius: 12px;
+			box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+		}
+
+		h2 {
+			text-align: center;
+			color: #ff7f50;
+		}
+
+		input[type="text"],
+		input[type="submit"] {
+			width: 100%;
+			padding: 10px;
+			margin: 12px 0;
+			border: 1px solid #ccc;
+			border-radius: 6px;
+			box-sizing: border-box;
+			font-size: 16px;
+		}
+
+		input[type="submit"] {
+			background-color: #ff7f50;
+			color: white;
+			cursor: pointer;
+			font-weight: bold;
+			transition: background-color 0.3s ease;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #e0663c;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="container">
+		<h2>Delete Student</h2>
+		<form action="DeleteStudentServlet" method="post">
+			ID:
+			<input type="text" name="id" required>
+			<input type="submit" value="Delete Student">
+		</form>
+	</div>
+
+</body>
+
+</html>

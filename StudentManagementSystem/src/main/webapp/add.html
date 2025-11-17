@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>Add Student</title>
+	<style>
+		body {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			background: linear-gradient(to right, #ffe0c3, #ffffff);
+			/* Light peach */
+			margin: 0;
+			padding: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+		}
+
+		.form-container {
+			background-color: white;
+			padding: 30px 40px;
+			border-radius: 12px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+			width: 320px;
+		}
+
+		h2 {
+			text-align: center;
+			margin-bottom: 20px;
+			color: #333;
+		}
+
+		label {
+			font-weight: 500;
+			display: block;
+			margin-bottom: 5px;
+		}
+
+		input[type="text"] {
+			width: 100%;
+			padding: 10px;
+			margin-bottom: 15px;
+			border: 1px solid #ccc;
+			border-radius: 6px;
+		}
+
+		input[type="submit"] {
+			width: 100%;
+			padding: 10px;
+			background-color: #ffa94d;
+			color: white;
+			border: none;
+			border-radius: 6px;
+			font-weight: bold;
+			cursor: pointer;
+			transition: background-color 0.3s ease;
+		}
+
+		input[type="submit"]:hover {
+			background-color: #ff922b;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="form-container">
+		<h2>Add Student</h2>
+		<form action="AddStudentServlet" method="post">
+			<label for="id">ID:</label>
+			<input type="text" name="id" id="id">
+
+			<label for="name">Name:</label>
+			<input type="text" name="name" id="name">
+
+			<label for="email">Email:</label>
+			<input type="text" name="email" id="email">
+
+			<label for="course">Course:</label>
+			<input type="text" name="course" id="course">
+
+			<input type="submit" value="Add Student">
+		</form>
+	</div>
+
+</body>
+
+</html>

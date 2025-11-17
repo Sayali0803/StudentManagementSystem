@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>View Students</title>
+	<style>
+		body {
+			font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+			background-color: #ffe5b4;
+			/* peach light */
+			margin: 0;
+			padding: 0;
+		}
+
+		.container {
+			width: 500px;
+			margin: 120px auto;
+			background-color: #fff;
+			padding: 30px 40px;
+			border-radius: 12px;
+			box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+			text-align: center;
+		}
+
+		h2 {
+			color: #ff7f50;
+			margin-bottom: 30px;
+		}
+
+		a.view-link {
+			display: inline-block;
+			text-decoration: none;
+			background-color: #ff7f50;
+			color: white;
+			padding: 12px 24px;
+			border-radius: 8px;
+			font-size: 16px;
+			font-weight: bold;
+			transition: background-color 0.3s ease;
+		}
+
+		a.view-link:hover {
+			background-color: #e0663c;
+		}
+	</style>
+</head>
+
+<body>
+
+	<div class="container">
+		<h2>View All Students</h2>
+		<a href="ViewStudentServlet" class="view-link">Click here to view all student records</a>
+	</div>
+
+</body>
+
+</html>
